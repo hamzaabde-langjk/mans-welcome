@@ -1,0 +1,33 @@
+# Omarchy Welcome Plugin
+
+A native **Omarchy Quatro** plugin that shows a personalized welcome window on login, with a bar icon, settings panel, avatar picker, name input, duration slider, preview button, and optional custom logo.
+
+This plugin runs as both:
+
+- `service` → automatically launches the welcome window on login
+
+---
+
+## ✨ Features
+
+- 👋 Shows a welcome screen on login
+- 🧑 Custom username
+- 🖼️ Custom avatar image
+- ⏱ Adjustable display duration
+- ▶ Preview button to test the welcome screen
+- 💾 Save button to store settings
+- 🏷 Optional custom logo in the Omarchy bar
+- 🔁 Auto-start service using Omarchy plugin system
+- 🪟 Floating centered welcome window using `lookfeel.lua`
+
+---
+
+## 📦 Dependencies
+
+Required packages:
+
+```bash
+foot
+figlet
+chafa
+zenity

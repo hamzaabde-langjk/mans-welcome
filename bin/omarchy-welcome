@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+NAME="${1:-User}"
+DURATION="${2:-4}"
+AVATAR="${3:-}"
+
+tput civis 2>/dev/null || true
+clear
+
+if [[ -n "$AVATAR" && -f "$AVATAR" ]] && command -v chafa &>/dev/null; then
+    chafa --size=24x12 --format=symbols "$AVATAR" 2>/dev/null || true
+    echo
+fi
+
+printf '\e[1;36m'
+if command -v figlet &>/dev/null; then
+    figlet -f slant -c "$NAME" 2>/dev/null
+else
+    printf '  ✦  %s  ✦\n' "$NAME"
+fi
+printf '\e[0m'
+printf '\e[2;35m%*s\e[0m\n' 20 "welcome back"
+
+sleep "$DURATION"
+tput cnorm 2>/dev/null || true
+exit 0

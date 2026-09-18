@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "mans.welcome",
+  "name": "Omarchy Welcome",
+  "version": "1.0.0",
+  "author": "Mans",
+  "license": "MIT",
+  "description": "Welcome window with bar icon, name picker, avatar picker, and autostart service",
+  "keywords": ["welcome", "startup", "avatar", "quickshell", "quattro"],
+  "kinds": ["bar-widget", "service"],
+  "keepLoaded": true,
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "service": "Service.qml"
+  },
+  "barWidget": {
+    "displayName": "Welcome",
+    "description": "Open welcome settings and preview welcome screen",
+    "category": "System",
+    "defaultSection": "right",
+    "allowMultiple": false,
+    "defaults": {
+      "active": true
+    },
+    "schema": [
+      {
+        "key": "active",
+        "type": "boolean",
+        "label": "Show Welcome widget",
+        "defaultValue": true
+      }
+    ]
+  }
+}
