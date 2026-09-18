@@ -21,7 +21,9 @@ This plugin runs as both:
 - 🪟 Floating centered welcome window using `lookfeel.lua`
 
 ---
-
+```bash
+ omarchy plugin add  https://github.com/hamzaabde-langjk/mans-welcome.git  --enable
+```
 ## 📦 Dependencies
 
 Required packages:
