@@ -20,10 +20,10 @@ This plugin runs as both:
 - 🔁 Auto-start service using Omarchy plugin system
 - 🪟 Floating centered welcome window using `lookfeel.lua`
 
----
 ```bash
- omarchy plugin add  https://github.com/hamzaabde-langjk/mans-welcome.git  --enable
-```
+omarchy plugin add  https://github.com/hamzaabde-langjk/mans-welcome.git  --enable
+
+
 ## 📦 Dependencies
 
 Required packages:
@@ -33,3 +33,5 @@ foot
 figlet
 chafa
 zenity
+-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/7afd1b7d-acf7-4855-ad58-f6a6bdb7d719" />
